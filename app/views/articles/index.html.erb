@@ -1,0 +1,14 @@
+<h1>All Articles</h1>
+
+<% @articles.each do |article| %>
+  <%= link_to article_path(article.id) do %>
+    Title: <%= article.title %>
+    <br>
+    Content: <%= article.content %>
+    <br>
+    ID: <%= article.id %>
+    <br>
+    <br>
+  <% end %>
+<% end %>
+
